@@ -14,8 +14,8 @@ section {
 .centered-text {
     align-items: center;
     height: 100%;
-    padding-top: 16vw;
-    padding-left: 30vh;
+    padding-top: 15%;
+    padding-left: 12%;
 }
 
 h1 {
@@ -93,3 +93,64 @@ p {
   }
   
 
+@media screen and (max-width: 768px) {
+    /* Styles for screens with a maximum width of 480px (e.g., mobile phones in portrait mode) */
+    h1 {
+        font-size: 28px; /* Adjust h1 font size */
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust h2 font size */
+    }
+
+    h3 {
+        font-size: 38px; /* Adjust h3 font size */
+    }
+
+    p {
+        font-size: 15px; /* Adjust paragraph font size */
+        width: 90%; /* Adjust the width of the paragraph */
+        margin: 2%;
+    }
+
+    .centered-text {
+        padding-top: 50%; /* Adjust the top padding of centered text */
+        padding-left: 8%; /* Adjust the left padding of centered text */
+    }
+
+    .button-container {
+        top: 3.5%; /* Adjust the top position of the button container */
+        right: 2%; /* Adjust the right position of the button container */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for screens with a maximum width of 480px (e.g., mobile phones in portrait mode) */
+    h1 {
+        font-size: 28px; /* Adjust h1 font size */
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust h2 font size */
+    }
+
+    h3 {
+        font-size: 38px; /* Adjust h3 font size */
+    }
+
+    p {
+        font-size: 15px; /* Adjust paragraph font size */
+        width: 90%; /* Adjust the width of the paragraph */
+        margin: 2%;
+    }
+
+    .centered-text {
+        padding-top: 50%; /* Adjust the top padding of centered text */
+        padding-left: 8%; /* Adjust the left padding of centered text */
+    }
+
+    .button-container {
+        top: 3.5%; /* Adjust the top position of the button container */
+        right: 2%; /* Adjust the right position of the button container */
+    }
+}
