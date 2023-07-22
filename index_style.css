@@ -1,7 +1,95 @@
 body {
-    display: flex;
+    position: relative;
     padding: 0;
     margin: 0;
-    background-color:#001C30 ;
-    font-family: 'Times New Roman', serif;
+    background-color:#3C486B ;
+    
 }
+
+section {
+    min-height: 100vh;
+    background-color: #3C486B;
+}
+
+.centered-text {
+    align-items: center;
+    height: 100%;
+    padding-top: 16vw;
+    padding-left: 30vh;
+}
+
+h1 {
+    font-size: 23px; 
+    color: #F0F0F0;
+    font-family: 'Arcade Classic', sans-serif;
+    letter-spacing: 5px;
+
+}
+
+h2 {
+    font-size: 18px; 
+    color: #F45050;
+    font-family: 'Arcade Classic', sans-serif;
+    letter-spacing: 5px;
+    margin: 0;
+
+}
+
+h3 {
+    font-size: 46px; 
+    color: #F9D949;
+    font-family: 'Arcade Classic', sans-serif;
+    letter-spacing: 5px;
+    margin: 0;
+
+}
+
+p {
+    font-size: 16px; 
+    color: #F0F0F0;
+    font-family: 'Arcade Classic', sans-serif;
+    letter-spacing: 6px;
+    margin: 0; /* Remove the default margin */
+    width: 70%;
+
+}
+
+.button-container {
+    position: fixed;
+    top: 2.5%; /* Position the container at the top of the screen */
+    right: 6%; /* Position the container at the right of the screen */
+    background-color: #3C486B;
+    padding: 10px;
+    display: flex; /* Use flexbox to align buttons horizontally */
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+.menu-button {
+    font-family: 'Arcade Classic', sans-serif;
+    margin-left: 10px; /* Add some space between buttons */
+    color: #F9D949;
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    margin: 10px;
+    border-radius: 70%; /* Add circular border */
+    transition: border 0.3s;
+}
+
+.menu-button:hover {
+    /*border: 4px solid #434242; /* Add border on hover */
+    color: #F0F0F0;
+}
+
+/* Styles when button is pressed (active state) */
+.menu-button.active {
+    color: #F0F0F0;
+}
+
+
+@font-face {
+    font-family: 'Arcade Classic';
+    src: url('fonts/ARCADECLASSIC.TTF') format('truetype'); /* Adjust the path and format based on the font file you have */
+    /* Add other font file formats here if available (e.g., woff, woff2) */
+  }
+  
+

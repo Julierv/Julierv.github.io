@@ -3,31 +3,44 @@
 
 <head>
     <title>My Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="index_style.css">
     
 </head>
 
 <body>
-    <div class="container">
-      <div class="row justify-content-end">
-        <div class="col-auto">
-          <a class="btn btn-link" href="#">Home</a>
-        </div>
-        <div class="col-auto">
-          <a class="btn btn-primary" href="#">Projects</a>
-        </div>
-        <div class="col-auto">
-          <a class="btn btn-primary" href="#">Resume</a>
-        </div>
-        <div class="col-auto">
-          <a class="btn btn-primary" href="#">About</a>
-        </div>
-      </div>
+    <div id="menuButtons" class="button-container">
+        <button class="menu-button" onclick="scrollToSection('section0')"> Home</button>
+        <button class="menu-button" onclick="scrollToSection('section1')"> Projects</button>
+        <button class="menu-button" onclick="scrollToSection('section2')"> Resume</button>
+        <button class="menu-button" onclick="scrollToSection('section3')"> Contact</button>
     </div>
 
+    <section id="section0">
+        <div class="centered-text">
+            <h1>Hello_there!, </h1>
+            <h2>My name is </h2>
+            <h3>Jose Sanchez</h3>
+            <p>I am a software engineer and CS student at the Univesity of Maryland at College Park.</p>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <section id="section1">
+        <h1>Section 1</h1>
+        <!-- Content for Section 1 -->
+    </section>
+
+    <section id="section2">
+        <h1>Section 2</h1>
+        <!-- Content for Section 2 -->
+    </section>
+
+    <section id="section3">
+        <h1>Section 3</h1>
+        <!-- Content for Section 2 -->
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
