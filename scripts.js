@@ -28,6 +28,28 @@ function scrollToSection(sectionId) {
     }
   }
 
+// Function to update the active button based on the section in view
+function updateActiveButton() {
+    const sections = document.querySelectorAll('section');
+    const menuButtons = document.querySelectorAll('.menu-button');
+
+    sections.forEach((section, index) => {
+        const button = menuButtons[index];
+        const rect = section.getBoundingClientRect();
+
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+            menuButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        }
+    });
+}
+
+// Add event listener to the window to update the active button when scrolling
+window.addEventListener('scroll', updateActiveButton);
+
+// Initial call to set the active button when the page loads
+updateActiveButton();
+
 
 // Function to add or remove the border class when the page is scrolled
 function handleScroll() {
