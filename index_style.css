@@ -7,14 +7,14 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 88vh;
     background-color: #3C486B;
 }
 
 .centered-text {
     align-items: center;
     height: 100%;
-    padding-top: 15%;
+    padding-top: 18%;
     padding-left: 12%;
 }
 
@@ -51,8 +51,28 @@ p {
     letter-spacing: 6px;
     margin: 0; /* Remove the default margin */
     width: 70%;
+    line-height: 1.5;
 
 }
+.highlight {
+    color: #F9D949; /* Desired color for the highlighted phrases */
+}
+
+.project-container{
+    margin-left: 8%;
+}
+
+
+.p2 {
+    font-size: 20px; 
+    color: #F0F0F0;
+    font-family: 'Arcade Classic', sans-serif;
+    letter-spacing: 6px;
+    margin: 0; /* Remove the default margin */
+    width: 65%;
+    margin-left: 20%;
+}
+
 
 .button-container {
     position: fixed;
@@ -64,6 +84,27 @@ p {
     padding: 0;
     display: flex; /* Use flexbox to align buttons horizontally */
     justify-content: flex-end; /* Align buttons to the right */
+}
+
+.text-container {
+}
+
+.image-container {
+    float: left; /* Float the image to the left */
+}
+
+.two-column-container {
+    display: flex;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.contact-container {
+    position: absolute;
+    height: 5%;
+    width: 70%;
+    background-color: #F9D949;
+    right: 15%;
 }
 
 .button-container-scrolled {
@@ -100,7 +141,25 @@ p {
     cursor: pointer;
 }
 
+.portrait-image {
+    width: 40vh; /* Set the width of the GIF */
+    margin-left: 34%;
+}
 
+.social-media-icons {
+    display: flex;
+    
+  }
+  
+/* Class for each social media icon */
+.social-icon {
+    width: 40px; /* Recommended width for social media icons */
+    height: 40px; /* Recommended height for social media icons */
+    margin-top: 9px;
+    margin-right: 10px; /* Adjust the spacing between icons as needed */
+    padding: 10px;
+    /* You can add other styles (e.g., border, border-radius, etc.) to customize the icons */
+}
 
 @font-face {
     font-family: 'Arcade Classic';
@@ -130,7 +189,7 @@ p {
     }
 
     .centered-text {
-        padding-top: 50%; /* Adjust the top padding of centered text */
+        padding-top: 58%; /* Adjust the top padding of centered text */
         padding-left: 8%; /* Adjust the left padding of centered text */
     }
     .menu-button{
@@ -164,12 +223,46 @@ p {
     }
 
     .centered-text {
-        padding-top: 50%; /* Adjust the top padding of centered text */
+        padding-top: 58%; /* Adjust the top padding of centered text */
         padding-left: 8%; /* Adjust the left padding of centered text */
     }
 
     .button-container {
         height: 12%;
         right: 5%;
+    }
+    .text-container {
+    }
+    
+    .two-column-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column; /* Set flex items to stack vertically */
+        margin-top: 22%;
+      }
+
+    .portrait-image {
+        width: 23vh; /* Set the width of the GIF */
+        margin-left: 0%;
+        margin-bottom: 20%;
+        animation: rotateOnce 1s ease-in-out;
+    }
+    .image-container {
+        display: inline-block;
+      }
+      
+    .p2 {
+        font-size: 20px; 
+        color: #F0F0F0;
+        font-family: 'Arcade Classic', sans-serif;
+        letter-spacing: 6px;
+        width: 80%;
+        margin-left: 13%;
+        margin-bottom: 20%;
+    }
+
+
+    .project-container{
+        margin-left: 13%;
     }
 }

@@ -24,20 +24,26 @@ wrapper.addEventListener('click', (e) => {
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const menuHeight = window.innerHeight * 0.12; // Get 12% of the window height for the menu
+      const offsetPosition = section.getBoundingClientRect().top - menuHeight;
+      window.scrollBy({ top: offsetPosition, behavior: "smooth" });
     }
-  }
+}
 
-// Function to update the active button based on the section in view
 function updateActiveButton() {
     const sections = document.querySelectorAll('section');
     const menuButtons = document.querySelectorAll('.menu-button');
+    const menuHeight = window.innerHeight * 0.12; // Get 12% of the window height for the menu
 
     sections.forEach((section, index) => {
         const button = menuButtons[index];
         const rect = section.getBoundingClientRect();
 
-        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+        // Calculate the offset by subtracting the menu height
+        const offset = rect.top - menuHeight;
+
+        // Check if the section is at least 50% visible on the screen
+        if (offset <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
             menuButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
         }
@@ -81,3 +87,6 @@ const gifElements = document.querySelectorAll('.gif-image');
 gifElements.forEach(gif => {
     gif.addEventListener('click', handleClickOnGif);
 });
+
+
+

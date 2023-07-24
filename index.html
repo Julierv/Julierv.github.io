@@ -10,9 +10,8 @@
 <body>
     <div id="menuButtons" class="button-container">
         <button class="menu-button active" onclick="scrollToSection('section0')"> Home</button>
-        <button class="menu-button" onclick="scrollToSection('section1')"> Projects</button>
-        <button class="menu-button" onclick="scrollToSection('section2')"> Resume</button>
-        <button class="menu-button" onclick="scrollToSection('section3')"> Contact</button>
+        <button class="menu-button" onclick="scrollToSection('section1')"> About me</button>
+        <button class="menu-button" onclick="scrollToSection('section2')"> Projects</button>
     </div>
 
     <section id="section0">
@@ -20,29 +19,42 @@
             <h1>Hello_there!, </h1>
             <h2>My name is </h2>
             <h3>Jose Sanchez</h3>
-            <p>I am a software engineer and CS student at the Univesity of Maryland at College Park.</p>
+            <p>I am a <span class="highlight">software engineer</span> and <span class="highlight">CS student</span> at the University of Maryland at College Park.</p>
             <img id="clickable-gif" src="images/pixelCoin.gif" alt="Animated GIF" class="gif-image">
             <img id="clickableGif" src="images/pixelCoin.gif" alt="Animated GIF" class="gif-image">
             <img id="clickableGif" src="images/pixelCoin.gif" alt="Animated GIF" class="gif-image">
             <img id="clickableGif" src="images/pixelCoin.gif" alt="Animated GIF" class="gif-image">
             <img id="clickableGif" src="images/pixelCoin.gif" alt="Animated GIF" class="gif-image">
             <img id="clickableGif" src="images/pixelCoin.gif" alt="Animated GIF" class="gif-image">
+            <br>
+            <div class="social-media-icons">
+                <a href="https://github.com/Julierv" target="_blank"><img src="images/github.png" alt="github" class="social-icon"></a>
+                <a href="https://www.linkedin.com/in/jose-julian-sanchez-alarcon-6a707a207/" target="_blank"><img src="images/linkedin.png" alt="linkedin" class="social-icon"></a>
+                <a href="mailto:sancalarcoj@gmail.com" target="_blank"><img src="images/gmail.png" alt="mail" class="social-icon"></a>
+                <!-- Add more social media icons as needed -->
+            </div>
+
+
         </div>
     </section>
 
 
-    <section id="section1">
-        <h1>Section 1</h1>
-        <!-- Content for Section 1 -->
+    <section id="section1" style="min-height: 60vh;">
+        <div class="two-column-container">
+            <div class="image-container">
+                <img src="images/portrait.JPG" alt="Animated GIF" class="portrait-image ">
+            </div>
+            <div class="text-container">
+                <div class="p2" style="line-height: 1.5;">I’m a newly graduated software engineer based in the Washington DC area. 
+                    I love competitive video games and I'm Up to date with the Berserk and one piece manga. </div>
+            </div>
+        </div>
     </section>
 
-    <section id="section2">
-        <h1>Section 2</h1>
-        <!-- Content for Section 2 -->
-    </section>
-
-    <section id="section3">
-        <h1>Section 3</h1>
+    <section id="section2" >
+        <div>
+            <h3 class="project-container">Projects</h3>
+        </div>
         <!-- Content for Section 2 -->
     </section>
 
