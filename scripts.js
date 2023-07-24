@@ -90,3 +90,30 @@ gifElements.forEach(gif => {
 
 
 
+// Function to check if the element is in view
+function isInView(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+  
+  // Function to handle the image animation
+  function handleImageAnimation(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      } else {
+        entry.target.classList.remove('in-view');
+      }
+    });
+  }
+  
+  // Create an Intersection Observer to handle the image animation
+  const observer = new IntersectionObserver(handleImageAnimation, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5 // Adjust the threshold as needed based on your design
+  });
+  
+  // Observe the image element with the scroll-animation class
+  const imageElement = document.querySelector('.scroll-animation');
+  observer.observe(imageElement);
