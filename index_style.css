@@ -243,6 +243,11 @@ p {
     height: auto;
     float: left;
     left: 10%;
+    filter: blur(2px);
+}
+
+.project-image:hover {
+    filter: none;
 }
 
 .project-text{
