@@ -34,6 +34,12 @@ function scrollToSection(sectionId) {
       window.scrollBy({ top: offsetPosition, behavior: "smooth" });
     }
 }
+// used to directly link to sections of the page
+if (window.location.hash) {
+    const sectionId = window.location.hash.substring(1);
+
+    scrollToSection(sectionId);
+}
 
 // function to update the active button
 function updateActiveButton() {
