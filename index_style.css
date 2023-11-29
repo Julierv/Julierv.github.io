@@ -276,6 +276,25 @@ p {
     margin-left: 44%;
 }
 
+.separator {
+    margin-bottom: 0vh; 
+    border: 0.01px solid #F9D949; 
+    width: 60%;
+    display: none;
+  }
+
+  .separator2 {
+    border: 0.01px solid #F9D949; 
+    width: 60%;
+    display: none;
+  }
+
+  .separator3 {
+    display: none;
+  }
+
+
+
 @font-face {
     font-family: 'Arcade Classic';
     src: url('fonts/ARCADECLASSIC.TTF') format('truetype');
@@ -383,6 +402,10 @@ p {
         margin-left: 25%;
     }
 
+    .separator {
+        display: none;
+        width: 75%;
+      }
 }
 
 /* changed styles for mobile screens */
@@ -453,6 +476,7 @@ p {
     .project-container{
         align-items: center;
         flex-direction: column;
+        margin-bottom: 4vh;
         
     }
 
@@ -567,4 +591,22 @@ p {
         width: 100%;
         text-align: center;
     }
+
+    .separator {
+        display: block;
+        margin-bottom: 5vh; 
+      }
+
+    .separator2 {
+        border: 0.01px solid #F9D949; 
+        width: 60%;
+        margin-bottom: 10px; 
+        display: block;
+    }
+
+    .separator3 {
+        border: 0.01px solid #F45050; 
+        width: 80%;
+        display: block;
+      }
 }
