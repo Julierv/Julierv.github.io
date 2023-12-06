@@ -19,16 +19,15 @@
     <body>
         <div id="menuButtons" class="button-container">
             <button class="menu-button active" onclick="scrollToSection('section0')"> Home</button>
-            <button class="menu-button" onclick="scrollToSection('section1')"> About me</button>
             <button class="menu-button" onclick="scrollToSection('section2')"> Projects</button>
         </div>
 
-        <section id="section0">
+        <section style="margin-bottom: 12vh;" id="section0">
             <div class="centered-text">
                 <h1>Hello_there!, </h1>
                 <h2>My name is </h2>
-                <h3>Julian Sanchez</h3>
-                <p><span class="highlight">software engineer</span> and <span class="highlight">CS student</span> at the University of Maryland at College Park.</p>
+                <h3>Jose Sanchez</h3>
+                <p><span class="highlight">software engineer</span> and <span class="highlight">lifetime learner</span></p>
                 <img src="images/pixelCoin.gif" alt="Animated GIF" class="gif-image">
                 <img src="images/pixelCoin.gif" alt="Animated GIF" class="gif-image">
                 <img src="images/pixelCoin.gif" alt="Animated GIF" class="gif-image">
@@ -43,35 +42,21 @@
                     <a href="https://www.linkedin.com/in/jose-julian-sanchez-alarcon-6a707a207/" target="_blank">
                         <img src="images/linkedin.png" alt="linkedin" class="social-icon">
                     </a>
-                    <a href="https://mail.google.com/mail/?view=cm&to=sancalarcoj@gmail.com" target="_blank">
+                    <a onclick="copyToClipboard('julierv0@terpgmail.umd.edu')" target="_blank">
                         <img src="images/gmail.png" alt="mail" class="social-icon">
                     </a>         
                 </div>
 
-
-            </div>
-        </section>
-
-
-        <section id="section1" style="min-height: 60vh;">
-            <div class="two-column-container">
-                <div class="image-container scroll-animation">
-                    <img src="images/portrait2.jpeg" alt="Animated GIF" class="portrait-image ">
-                </div>
-                <div class="text-container">
-                    <div class="p2" style="line-height: 1.5;" > <span class="highlight">software engineer</span> based in the Washington DC area.<br> <br>
-                        I'm interested in <span class="highlight">front-end</span> and <span class="highlight">back-end</span> development and immensely <span class="highlight">excited to learn</span> new technologies. </div>
-                    <div class="two-column-container2">
-                        <div class="text-container2">
-                            <div class="h22"><br> Download resume: </div>
-                        </div>
-                        <div class="image-container2">
-                            <a href="Julian-Sanchez-Resume.pdf" download="Julian-Sanchez-Resume.pdf">
-                                <img src="images/document.png" alt="Download PDF" class="resume-image">
-                            </a>
-                        </div>
-                    </div> 
-                </div>
+                <div class="two-column-container2">
+                    <div class="text-container2">
+                        <div class="h222"><br>Resume: </div>
+                    </div>
+                    <div class="image-container2">
+                        <a href="Julian-Sanchez-Resume.pdf" download="Julian-Sanchez-Resume.pdf">
+                            <img src="images/document.png" alt="Download PDF" class="resume-image">
+                        </a>
+                    </div>
+                </div> 
             </div>
         </section>
 

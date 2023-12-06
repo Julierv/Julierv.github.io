@@ -117,6 +117,18 @@ function handleImageAnimation(entries) {
     });
 }
 
+// copies my email when clicking button
+function copyToClipboard(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    alert('Email address copied to clipboard: ' + text);
+}
+
+
 // create an Intersection Observer to handle the image animation
 const observer = new IntersectionObserver(handleImageAnimation, {
     root: null,
